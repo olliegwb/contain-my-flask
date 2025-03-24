@@ -10,11 +10,11 @@ WORKDIR /app
 # sets /app as the working directory inside the container
 # any follwing commands (RUN, CMD) will run inside /app
 
-RUN pip install -r requirements.txt
+RUN pip install --upgrade pip && pip install -r requirements.txt
 # installs python dependencies
 
 EXPOSE 3030
 
 CMD python /app/main.py
 # this specifies the command that will run when the container starts
-# so when you start the container it will run 'python /app/main.py' which runs the app.
+# so when you start the container it will run 'python /app/main.py' which runs the app.eb open

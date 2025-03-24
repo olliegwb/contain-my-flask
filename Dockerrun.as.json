@@ -1,0 +1,15 @@
+
+{
+    "AWSEBDockerrunVersion":"1",
+    "Image":{
+        "Name":"olliegwb/fried_gold:latest",
+        "Update": "true"
+    },
+
+    "Ports":[
+        {
+            "ContainerPort":3030,
+            "HostPort":80
+        }
+    ]
+}
